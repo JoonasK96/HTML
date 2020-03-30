@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2|Odibee+Sans&display=swap" rel="stylesheet">
+    <title>Tehtävä 1</title>
+	<meta charset="UTF-8">
+	<style>  
+        * {
+        }
+        
+        img {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        div {
+            display: block;
+        }
+
+        html, body, .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .leftside {
+            display: flex;
+            width: 50%;
+            float: left;
+            position: fixed;
+            height: 100%;
+        }
+
+        .leftcard {
+        width: 50%;
+        margin: auto auto;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+        }
+
+        .rightside {
+        display: flex;
+        float: right;
+        background-color: burlywood;
+        width: 50%;
+        height: 100%;
+        }
+
+        .rightcard {
+            width: 50%;
+            height: 50%;
+            margin: auto auto;
+        }
+
+        .p1 {
+            padding: 5%;
+            font-family: 'Baloo 2', cursive;
+            font-size: 20px;
+        }
+
+        .headline {
+            font-family:'Odibee Sans', cursive;
+            font-size: 50px;
+        }
+
+        .mainos {
+            font-family: 'Baloo 2', cursive;
+            font-size: 20px;
+        }
+
+        .scrolli {
+            width: 300px;
+            position: absolute;
+            z-index: 2;
+            margin-left: 42%;
+            bottom: 50px;
+        }
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:5px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+    </style>
+    </head>
+
+<body style = "margin: 0">
+
+<div class="scrolli">
+    <p1 class="p1">Scrollaa alas jos haluat</p1>
+</div>
+
+<div class="container">
+<div class="leftside">
+<div class="leftcard">
+<img src="muumi.jpg" alt="maalaus">
+<p class="p1">Muumit ovat saaneet tarpeekseen</p>
+</div>
+</div>
+
+
+<div class="rightside">
+    <div class="rightcard">
+    <h1 class="headline">THIS IS A HEADLINE</h1>
+<ol class="mainos">
+    <li>Tämä tässä on harjoitustehtävä</li>
+    <li>Deadline puskee päälle</li>
+    <li><input type="text" id="input" name="input"> <br></br></li>
+    <li><a href="#" class="myButton">NAPPI</a></li>
+    <li>TULEE KIIRE!</li>
+</ol>
+</div>
+</div>
+</div>
+  
+
+</body>
+</html>
